@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'),
+        url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('fonts/ProximaNova-Regular.woff') format('woff'),
+        url('fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 18px; 
+}
+
+.top-menu {
+    width: 80%;
+    margin: auto;
+}
+
+.top-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-information__logo { 
+    height: 50px;
+    margin: 10px;
+}
+
+.top-information__adress { 
+    height: 22px;
+}
+
+.top-information__clock { 
+    height: 18px;
+}
+
+.top-information__phone { 
+    height: 18px;
+}
+
+.top-information__main-info { 
+    color: #1D479B;
+    line-height: 22px;
+}
+
+.top-information__info { 
+    margin: 30px;
+}
