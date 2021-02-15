@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Proxima Nova';
     src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'),
-        url('fonts/ProximaNova-Regular.woff2') format('woff2'),
-        url('fonts/ProximaNova-Regular.woff') format('woff'),
-        url('fonts/ProximaNova-Regular.ttf') format('truetype');
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
   }
@@ -21,13 +21,15 @@
 .top-information {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #B7B7B7;
+    margin-top: 25px;
+    padding-bottom: 25px;
 }
 
 .top-information__logo { 
     height: 50px;
-    margin: 10px;
 }
 
 .top-information__adress { 
@@ -35,18 +37,55 @@
 }
 
 .top-information__clock { 
-    height: 18px;
+    height: 20px;
 }
 
 .top-information__phone { 
-    height: 18px;
+    height: 20px;
 }
 
 .top-information__main-info { 
     color: #1D479B;
     line-height: 22px;
+    font-weight: 900;
 }
 
-.top-information__info { 
-    margin: 30px;
+.top-information__additional-info { 
+    color: #757575;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.top-information__info:last-child >.top-information__additional-info:hover { 
+    text-decoration: underline;
+}
+
+.top-information__phone {
+    color: #1D479B;
+    line-height: 22px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.top-information__phone:hover {
+    text-decoration: underline;
+}
+
+.top-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.top-links__link {
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D479B;
+    text-decoration: none;
+}
+
+.top-links__link:hover {
+    text-decoration: underline;
 }
