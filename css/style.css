@@ -14,7 +14,7 @@
 }
 
 .top-menu {
-    width: 80%;
+    width: 75%;
     margin: auto;
 }
 
@@ -84,8 +84,111 @@
     line-height: 24px;
     color: #1D479B;
     text-decoration: none;
+    padding-bottom: 25px;
 }
 
 .top-links__link:hover {
     text-decoration: underline;
+}
+
+.top-block {
+    background: url('../images/mask.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4%;
+}
+
+.top-block__title {
+    font-size: 45px;
+    line-height: 55px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.top-block__descr {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.top-block__action {
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.top-block__button {
+    background: linear-gradient(92.33deg, #1D479B 17.41%, #3345EB 100%);
+    box-shadow: 0px 5px 15px #1D479B;
+    color: #fff;
+    padding: 15px 90px;
+    font-size: 25px;
+    margin-left: 25px;
+    border: none;
+}
+
+.top-block__button:hover {
+    box-shadow: none;
+}
+
+.construction {
+    width: 75%;
+    margin: auto;
+}
+
+.constructions-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.construction__title {
+    margin-top: 30px;
+    font-size: 40px;
+    line-height: 49px;
+    color: #1D479B;
+    text-align: center;
+    font-weight: 900;
+}
+
+.construction__button {
+    background: linear-gradient(92.33deg, #1D479B 17.41%, #3345EB 100%);
+    box-shadow: 0px 5px 15px #1D479B;
+    color: #fff;
+    padding: 15px 90px;
+    font-size: 25px;
+    border: none;
+    margin: 40px auto;
+    display: block;
+}
+
+.construction__button:hover {
+    box-shadow: none;
+}
+
+.constructions-list__item {
+    border: 1px solid #D9D9D9;
+    margin-top: 30px;
+    margin-left: 20px;
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.constructions-list__image {
+    margin: 0 auto;
+    display: block;
+}
+
+.constructions-list__text {
+    text-align: center;
+    font-size: 23px;
+    line-height: 28px;
+    color: #000;
+    margin-top: 15px;
 }
