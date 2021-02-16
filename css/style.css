@@ -130,6 +130,7 @@
     font-size: 25px;
     margin-left: 25px;
     border: none;
+    cursor: pointer;
 }
 
 .top-block__button:hover {
@@ -166,6 +167,7 @@
     border: none;
     margin: 40px auto;
     display: block;
+    cursor: pointer;
 }
 
 .construction__button:hover {
@@ -191,4 +193,28 @@
     line-height: 28px;
     color: #000;
     margin-top: 15px;
+}
+
+.works {
+    background: #F2F2F2;
+}
+
+.works__title {
+    padding-top: 30px;
+    font-size: 40px;
+    line-height: 49px;
+    color: #1D479B;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.slick-slider {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+    width: 100%;
 }
