@@ -75,8 +75,20 @@
     padding-bottom: 25px;
 }
 
-.top-links__link:hover {
-    text-decoration: underline;
+.top-links__link:after {
+    display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #1D479B;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.top-links__link:hover:after,
+.top-links__link:focus:after {
+	width: 100%;
 }
 
 .top-block {
