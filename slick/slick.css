@@ -161,12 +161,12 @@ cursor: pointer;
 
 .fa-angle-right
   {
-	right: 30%;  
+	right: 38%;  
   }
   
   .fa-angle-left
   {  
-	left: 30%;
+	left: 38%;
   }
   
 .fa-angle-right_ svg path { fill: #D2D2D2; }
@@ -189,3 +189,50 @@ cursor: pointer;
  .slides-numbers > .active {
      color: #1D479B;
  }
+
+ #slider02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+ }
+
+ #slider02 .slick-slide {
+    padding-right: 2%;
+    z-index: 2;
+    position: relative;
+ }
+
+ .overlay {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 3;
+  }
+   
+  .overlay:hover:after{
+    content:"";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.49);
+    z-index: 3;
+  }
+  
+  .zoom {
+    background: url(../images/zoom.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+  }
+
+  .zoom:hover {
+    opacity: 1;
+  }
