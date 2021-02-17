@@ -73,6 +73,7 @@
     color: #1D479B;
     text-decoration: none;
     padding-bottom: 25px;
+    position: relative;
 }
 
 .top-links__link:after {
@@ -86,8 +87,8 @@
 	transition: width 0.3s ease-out;
 }
 
-a.top-links__link:hover:after,
-a.top-links__link:focus:after {
+top-links__link:hover:after,
+top-links__link:focus:after {
 	width: 100%;
 }
 
