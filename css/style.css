@@ -171,7 +171,7 @@
 }
 
 .constructions-list__image {
-    margin: 0 auto;
+    margin: 30px auto 0;
     display: block;
 }
 
@@ -180,7 +180,7 @@
     font-size: 23px;
     line-height: 28px;
     color: #000;
-    margin-top: 15px;
+    margin: 15px auto 20px;
 }
 
 .works {
