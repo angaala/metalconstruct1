@@ -148,7 +148,7 @@ position: relative;
 
 .myarrow
 {
-bottom: -58px;
+bottom: -48px;
 position: absolute;
 z-index: 9999;
 font-size: 30px;	
@@ -156,25 +156,22 @@ cursor: pointer;
 }
 
 .myarrow:hover { 
-  //opacity: .2; 
+  opacity: .7; 
 }
 
 .fa-angle-right
   {
 	right: 30%;  
-	background: url(right.svg) no-repeat;
-	height: 32px;
-	width: 47px;
   }
   
   .fa-angle-left
   {  
 	left: 30%;
-	background: url(left.svg) no-repeat;
-	height: 32px;
-	width: 47px;
   }
   
+.fa-angle-right_ svg path { fill: #D2D2D2; }
+.fa-angle-left_ svg path { fill: #1D479B; }
+
   .fa-angle-left:before{
  content: '';
  }
