@@ -148,7 +148,7 @@ position: relative;
 
 .myarrow
 {
-bottom: 50%;
+bottom: -58px;
 position: absolute;
 z-index: 9999;
 font-size: 30px;	
@@ -156,23 +156,23 @@ cursor: pointer;
 }
 
 .myarrow:hover { 
-  opacity: .2; 
+  //opacity: .2; 
 }
 
 .fa-angle-right
   {
-	right: -5%;  
-	background: url(controls.png) no-repeat -43px -32px;
+	right: 30%;  
+	background: url(right.svg) no-repeat;
 	height: 32px;
-	width: 32px;
+	width: 47px;
   }
   
   .fa-angle-left
   {  
-	left: -5%;
-	background: url(controls.png) no-repeat 0 -32px;
+	left: 30%;
+	background: url(left.svg) no-repeat;
 	height: 32px;
-	width: 32px;
+	width: 47px;
   }
   
   .fa-angle-left:before{
@@ -181,4 +181,14 @@ cursor: pointer;
  
   .fa-angle-right:before{
  content: '';
+ }
+
+ .slides-numbers {
+    text-align: center;
+    margin-top: 25px;
+    color: #B9B9B9;
+ }
+
+ .slides-numbers > .active {
+     color: #1D479B;
  }
