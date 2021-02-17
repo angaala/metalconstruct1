@@ -199,7 +199,7 @@ cursor: pointer;
 
  #slider02 .slick-slide {
     padding-right: 2%;
-    z-index: 2;
+    z-index: 4;
     position: relative;
  }
 
@@ -207,7 +207,6 @@ cursor: pointer;
     position: relative;
     display: inline-block;
     overflow: hidden;
-    z-index: 3;
   }
    
   .overlay:hover:after{
@@ -217,7 +216,8 @@ cursor: pointer;
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.49);
-    z-index: 3;
+    z-index: 5;
+    pointer-events: none;
   }
   
   .zoom {
@@ -225,14 +225,15 @@ cursor: pointer;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 4;
     left: 0;
     top: 0;
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 0;
+    z-index: 6;
   }
 
   .zoom:hover {
     opacity: 1;
+    pointer-events: none;
   }
