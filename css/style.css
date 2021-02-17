@@ -86,11 +86,6 @@
 	transition: width 0.3s ease-out;
 }
 
-.top-links__link:hover:after,
-.top-links__link:focus:after {
-	width: 100%;
-}
-
 .top-block {
     background: url('../images/mask.png') no-repeat;
     background-size: cover;
