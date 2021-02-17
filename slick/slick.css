@@ -235,5 +235,4 @@ cursor: pointer;
 
   .zoom:hover {
     opacity: 1;
-    pointer-events: none;
   }

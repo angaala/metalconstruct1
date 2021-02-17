@@ -41,19 +41,19 @@ $('.quality .total').text(slidesCount2);
 $('#slider01').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   let currentSlide_ = nextSlide + 1;
   let slidesCount = $('#slider01 .slick-slide').length/2;
+  if(currentSlide_ == (slidesCount - 2)) {$('#slider01 .fa-angle-right').addClass('fa-angle-right_');} else {$('#slider01 .fa-angle-right').removeClass('fa-angle-right_');}
+  if(currentSlide_ != 1) {$('#slider01 .fa-angle-left').addClass('fa-angle-left_');} else {$('#slider01 .fa-angle-left').removeClass('fa-angle-left_');}
   if(slidesCount < 10) { slidesCount = '0' + slidesCount;}
   if(currentSlide_ < 10) { currentSlide_ = '0' + currentSlide_;}
-  if(currentSlide_ == slidesCount) {$('#slider01 .fa-angle-right').addClass('fa-angle-right_');} else {$('#slider01 .fa-angle-right').removeClass('fa-angle-right_');}
-  if(currentSlide_ != '01') {$('#slider01 .fa-angle-left').addClass('fa-angle-left_');} else {$('#slider01 .fa-angle-left').removeClass('fa-angle-left_');}
   $('.works .active').text(currentSlide_);
 });
 
 $('#slider02').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   let currentSlide_ = nextSlide + 1;
-  let slidesCount = $('#slider02 .slick-slide').length/2;
+  let slidesCount = $('#slider02 .slick-slide').length/2; console.log(currentSlide_ + '_' + slidesCount);
+  if(currentSlide_ == (slidesCount - 3)) {$('#slider02 .fa-angle-right').addClass('fa-angle-right_');} else {$('#slider02 .fa-angle-right').removeClass('fa-angle-right_');}
+  if(currentSlide_ != 1) {$('#slider02 .fa-angle-left').addClass('fa-angle-left_');} else {$('#slider02 .fa-angle-left').removeClass('fa-angle-left_');}
   if(slidesCount < 10) { slidesCount = '0' + slidesCount;}
   if(currentSlide_ < 10) { currentSlide_ = '0' + currentSlide_;}
-  if(currentSlide_ == slidesCount) {$('#slider02 .fa-angle-right').addClass('fa-angle-right_');} else {$('#slider02 .fa-angle-right').removeClass('fa-angle-right_');}
-  if(currentSlide_ != '01') {$('#slider02 .fa-angle-left').addClass('fa-angle-left_');} else {$('#slider02 .fa-angle-left').removeClass('fa-angle-left_');}
   $('.quality .active').text(currentSlide_);
 });

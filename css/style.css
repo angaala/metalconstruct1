@@ -293,3 +293,89 @@
     font-weight: 900;
     margin-bottom: 30px;
 }
+
+.questions {
+    background: url('../images/factory.png') no-repeat;
+    background-size: cover;
+    height: 360px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 10%;
+}
+
+.questions__koshachya-zhena {
+    height: 95%;
+}
+
+.questions-block {
+    align-self: flex-start;
+    margin-top: 4%;
+    margin-left: 5%;
+    flex-grow: 1;
+}
+
+.questions-block__title {
+    font-size: 40px;
+    line-height: 49px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.questions-block__text {
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.questions-block__form {
+    margin-top: 5%;
+}
+
+.questions-block__submit {
+    background: linear-gradient(92.33deg, #1D479B 17.41%, #3345EB 100%);
+    box-shadow: 0px 5px 15px #1D479B;
+    color: #fff;
+    padding: 15px 90px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.questions-block__submit:hover {
+    box-shadow: none;
+}
+
+.questions-block__input {
+    margin-right: 15px;
+    padding: 18px;
+}
+
+.questions-block__item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+  
+  
+  .questions-block__label {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    right: 15px;
+    top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 40px;
+    transition: .3s;
+    color: #949494;
+  }
+  
+  .questions-block__input:focus~.questions-block__label,
+  .questions-block__input:not(:focus):valid~.questions-block__label {
+    top: -10px;
+    font-size: 10px;
+  }
