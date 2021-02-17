@@ -87,8 +87,8 @@
 	transition: width 0.3s ease-out;
 }
 
-top-links__link:hover:after,
-top-links__link:focus:after {
+.top-links__link:hover:after,
+.top-links__link:focus:after {
 	width: 100%;
 }
 
