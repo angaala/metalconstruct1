@@ -57,3 +57,30 @@ $('#slider02').on('beforeChange', function(event, slick, currentSlide, nextSlide
   if(currentSlide_ < 10) { currentSlide_ = '0' + currentSlide_;}
   $('.quality .active').text(currentSlide_);
 });
+
+$(function(){
+  $("a[href^='#']:not(a[href^='#openModal']").click(function(){
+          var _href = $(this).attr("href");
+          $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+          return false;
+  });
+});
+
+$(document).ready(function() {
+$("#phone").mask("+7 (999) 99-99-999");
+$("#phone1").mask("+7 (999) 99-99-999");
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+  console.log(scrollbar);
+  document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+    document.body.style.overflow = 'hidden';
+    document.querySelector('#openModal').style.marginLeft = scrollbar;
+  });
+  document.querySelector('[href="#close"]').addEventListener('click', function () {
+    document.body.style.overflow = 'visible';
+    document.querySelector('#openModal').style.marginLeft = '0px';
+  });
+});

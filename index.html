@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/modal.css" />
 </head>
 <body>
     <div class="container">
@@ -45,10 +46,10 @@
                 </div>
             </div>
             <div class="top-links">
-                <a class="top-links__link" href="#">Конструкции</a>
-                <a class="top-links__link" href="#">Работы</a>
-                <a class="top-links__link" href="#">Преимущества</a>
-                <a class="top-links__link" href="#">Качество</a>
+                <a class="top-links__link" href="#constructions">Конструкции</a>
+                <a class="top-links__link" href="#works">Работы</a>
+                <a class="top-links__link" href="#advantages">Преимущества</a>
+                <a class="top-links__link" href="#quality">Качество</a>
             </div>
         </header>
         <div class="top-block">
@@ -60,10 +61,10 @@
                 </div>
                 <div class="top-block__action">
                     Рассчитаем проект в течение 1 дня!
-                    <button class="top-block__button">Получить смету</button>
+                    <a class="top-block__button" href="#openModal">Получить смету</a>
                 </div>
         </div>
-        <div class="construction">
+        <div class="construction" id="constructions">
             <div class="construction__title">Конструкции</div>
             <div class="constructions-list">
                 <div class="constructions-list__item">
@@ -83,9 +84,9 @@
                     <div class="constructions-list__text">Фермы, полигоны,</br>консоли</div>
                 </div>
             </div>
-            <button class="construction__button">Посмотреть все конструкции</button>
+            <div class="construction-link-block"><a class="construction__button" href="#openModal">Посмотреть все конструкции</a></div>
         </div>
-        <div class="works">
+        <div class="works" id="works">
             <div class="works__title">
                 Готовые работы
             </div>
@@ -101,7 +102,7 @@
                 <span class="active">01</span> / <span class="total">15</span>
             </div>
         </div>
-        <div class="advantages">
+        <div class="advantages" id="advantages">
             <div class="advantages__title">
                 Преимущества заказа у нас
             </div>  
@@ -147,9 +148,9 @@
                     <div class="advantages-list__text">Работа над проектом от<br>идеи до воплощения</div>
                 </div>
             </div>  
-            <button class="advantages__button">Получить коммерческое предложение</button>
+            <div class="advantages-link-block"><a class="advantages__button" href="#openModal">Получить коммерческое предложение</a></div>
         </div>
-        <div class="quality">
+        <div class="quality" id="quality">
             <div class="quality__title">
                 Подтверждение качества
             </div>
@@ -183,12 +184,95 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">       
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.3074472548609!2d30.291795657991717!3d59.919878875022306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630e53b152e4b%3A0x38122ee939f25423!2z0JrQsNC90L7QvdC10YDRgdC60LDRjyDRg9C7LiwgMi8xNywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MDEyMQ!5e0!3m2!1sru!2sru!4v1613576550186!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <footer class="footer">  
+            <div class="footer-links">
+                <img src="images/logo.png" class="footer-information__logo">
+                <a class="footer-links__link" href="#constructions">Конструкции</a>
+                <a class="footer-links__link" href="#works">Работы</a>
+                <a class="footer-links__link" href="#advantages">Преимущества</a>
+                <a class="footer-links__link" href="#quality">Качество</a>
+            </div>
+            <div class="footer-information">
+                <div class="footer-information__info">
+                    <div class="footer-information__main-info">
+                        <img src="images/adress.svg" class="footer-information__adress">                                   
+                        Россия, Санкт-Петербург                            
+                    </div>
+                    <div class="footer-information__additional-info">
+                        ул. Ленина, 21/1
+                    </div>
+                </div>
+                <div class="footer-information__info">
+                    <div class="footer-information__main-info">
+                        <img src="images/clock.svg" class="footer-information__clock">                                   
+                        08:30 - 17:30                            
+                    </div>
+                    <div class="footer-information__additional-info">
+                        сб.-вс. - выходной
+                    </div>
+                </div>
+                <div class="footer-information__info">
+                    <div class="footer-information__main-info">
+                        <img src="images/phone.svg" class="footer-information__phone">                                   
+                        <a class="footer-information__phone" href="tel:+73482588144">+7 (348) 258-81-44</a>                           
+                    </div>
+                    <a class="footer-information__additional-info" href="#">
+                        заказать звонок
+                    </a>
+                </div>
+                <div class="footer-information__info">
+                    Поделиться в соц.сетях
+                    <div class="footer-information__socials">
+                        <a href="#" class="footer-information__link"><img src="images/soc1.png" class="footer-information__image"></a>
+                        <a href="#" class="footer-information__link"><img src="images/soc2.png" class="footer-information__image"></a>
+                        <a href="#" class="footer-information__link"><img src="images/soc3.png" class="footer-information__image"></a>
+                        <a href="#" class="footer-information__link"><img src="images/soc4.png" class="footer-information__image"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-background">
+                <div class="footer-bottom">
+                    <img class="footer-bottom__logo" src="images/logo2.svg">
+                    <div class="footer-bottom__text">
+                        Отправляя любую форму на сайте, вы соглашаетесь<br>с <a href="#" class="footer-bottom__link">политикой конфиденциальности</a> данного сайта.
+                    </div>
+                </div> 
+            </div>    
         </footer>
     </div>
+
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title"></h3>
+              <a href="#close" title="Close" class="close"></a>
+            </div>
+            <div class="modal-body">
+                <div class="modal-block">    
+                    <div class="modal-title">
+                        Получить коммерческое<br>предложение
+                    </div>
+                    <div class="modal__item"><input class="modal__input" type="text" name="name1" id="name1" required><label for="name1" class="modal__label">Ваше имя</label></div>
+                    <div class="modal__item"><input class="modal__input" type="text" name="phone1" id="phone1" required><label for="phone1" class="modal__label">Телефон</label></div>
+                    <div class="modal__item"><input class="modal__input" type="text" name="mail1" id="mail1" required><label for="mail1" class="modal__label">Электронная почта</label></div>
+                    <input class="modal__submit" type="submit" value="Отправить">
+                </div>
+                <div class="modal__text">
+                    Отправляя любую форму на сайте, вы соглашаетесь<br>с <a href="#" class="modal__link">политикой конфиденциальности</a> данного сайта.
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script defer src="slick/slick.min.js"></script>
     <script src="fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
