@@ -87,7 +87,7 @@ $('#slider02').on('beforeChange', function(event, slick, currentSlide, nextSlide
 });
 
 $(function(){
-  $("a[href^='#']:not(a[href^='#openModal'])").click(function(){
+  $("a[href^='#']:not(a[href^='#openModal'], a[href^='#close'])").click(function(){
           var _href = $(this).attr("href");
           $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
           return false;
