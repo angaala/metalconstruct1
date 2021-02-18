@@ -59,7 +59,7 @@ $('#slider02').on('beforeChange', function(event, slick, currentSlide, nextSlide
 });
 
 $(function(){
-  $("a[href^='#']:not(a[href^='#openModal']").click(function(){
+  $("a[href^='#']:not(a[href^='#openModal']))").click(function(){
           var _href = $(this).attr("href");
           $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
           return false;
@@ -82,5 +82,37 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector('[href="#close"]').addEventListener('click', function () {
     document.body.style.overflow = 'visible';
     document.querySelector('#openModal').style.marginLeft = '0px';
+  });
+});
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+  var div = $(".modal-content"); // тут указываем ID элемента
+  if (!div.is(e.target) && ($(".modal").css('opacity')=='1') // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $(".modal").css('opacity', '0'); // скрываем его
+        $(".modal").css('pointer-events', 'none');
+        $(".modal").css('overflow-y', '');
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+  }
+});
+
+$(function(){
+  $("a[href^='#openModal']").click(function(){
+    $(".modal").css('opacity', '1');
+    $(".modal").css('pointer-events', 'auto');
+    $(".modal").css('overflow-y', 'auto');
+          return false;
+  });
+});
+
+$(function(){
+  $(".close").click(function(){
+    $(".modal").css('opacity', '0');
+    $(".modal").css('pointer-events', 'none');
+        $(".modal").css('overflow-y', '');
+    document.body.style.overflow = 'visible';
+    document.querySelector('#openModal').style.marginLeft = '0px';
+          return false;
   });
 });

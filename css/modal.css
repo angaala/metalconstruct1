@@ -20,11 +20,11 @@
     }
 
     /* при отображении модального окно */
-    .modal:target {
+    /*.modal:target {
       opacity: 1;
       pointer-events: auto;
       overflow-y: auto;
-    }
+    }*/
 
     /* ширина модального окна и его отступы от экрана */
     .modal-dialog {
@@ -105,6 +105,7 @@
       background: url(../images/close.svg) no-repeat;
       width: 22px;
       height: 22px;
+      cursor: pointer;
     }
 
     /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
